@@ -4,3 +4,4 @@ Pillow
 requests
 pytesseract
 numpy
+cv2
