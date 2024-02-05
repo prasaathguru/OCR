@@ -1,0 +1,6 @@
+streamlit
+altair
+Pillow
+requests
+pytesseract
+numpy
