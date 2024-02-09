@@ -2,7 +2,7 @@ import streamlit as st
 from PIL import Image
 import pytesseract
 pytesseract.pytesseract.tesseract_cmd = r'C:\\Program Files\\Tesseract-OCR\\tesseract'
-import numpy as np
+# import numpy as np
 from cv2 import cv2
 import time
 
