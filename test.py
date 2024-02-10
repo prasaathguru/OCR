@@ -16,7 +16,7 @@ def main():
             img = np.array(Image.open(uploaded_file))
             st.image(img)
             st.write("Processing..")
-            text = pytesseract.image_to_string(img3)
+            text = pytesseract.image_to_string(img)
             print(text)
             st.write(text)
             # Load the input image
