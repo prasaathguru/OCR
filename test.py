@@ -1,9 +1,9 @@
 import streamlit as st
 from PIL import Image
 import pytesseract
+pytesseract.pytesseract.tesseract_cmd = r'C:\\Program Files\\Tesseract-OCR\\tesseract'
 import numpy as np
 import cv2
-import time
 
 
 def main():
@@ -43,7 +43,6 @@ def main():
             
             text = pytesseract.image_to_string(img)
             print(text)
-            st.write("Processing..")
             st.write(text)
             
             
