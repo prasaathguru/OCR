@@ -15,6 +15,7 @@ def main():
         try:
             img = np.array(Image.open(uploaded_file))
             st.image(img)
+            st.write("Processing..")
             # text = pytesseract.image_to_string(img3)
             # print(text)
             # st.write(text)
@@ -43,7 +44,7 @@ def main():
             
             text = pytesseract.image_to_string(img)
             print(text)
-            st.write("Processing..")
+            
             st.write(text)
             
             
