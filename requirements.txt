@@ -5,4 +5,4 @@ Pillow
 requests
 pytesseract
 numpy
-opencv-python-headless
+cv2
