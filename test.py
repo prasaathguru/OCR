@@ -43,6 +43,7 @@ def main():
             
             text = pytesseract.image_to_string(img)
             print(text)
+            st.write("Processing..")
             st.write(text)
             
             
