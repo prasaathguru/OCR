@@ -10,7 +10,7 @@ def main():
     st.title("GURU PRASAATH OCR")
     # st.markdown("*Streamlit* is **really** ***cool***.")
     st.header("Choose an image")
-    uploaded_file = st.file_uploader("",type=["jpg","png"])
+    uploaded_file = st.file_uploader("Upload an image file",type=["jpg","png"])
     if uploaded_file is not None:
         try:
             img = np.array(Image.open(uploaded_file))
