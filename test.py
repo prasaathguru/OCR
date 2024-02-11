@@ -7,6 +7,8 @@ import cv2
 
 
 def main():
+    st.set_page_config(
+    page_title="G-AI-OCR")
     st.title("GURU PRASAATH OCR")
     st.header("Choose an image")
     uploaded_file = st.file_uploader("Upload Your Image",type=["jpg","png"])
