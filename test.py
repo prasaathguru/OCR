@@ -15,7 +15,6 @@ def main():
             img = np.array(Image.open(uploaded_file))
             st.image(img)
             text = pytesseract.image_to_string(img)
-            print(text)
             st.write(text)
 
         
