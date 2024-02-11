@@ -10,16 +10,18 @@ def main():
     st.title("GURU PRASAATH OCR")
     st.header("Choose an image")
     uploaded_file = st.file_uploader("Upload Your Image",type=["jpg","png"])
-    img = np.array(Image.open(uploaded_file))
-    st.image(img)
-    st.write("Hi")
-    text = pytesseract.image_to_string(img)
-    st.write("Processing")
-    print(text)
-    st.write(text)
+    if uploaded_file is not None:
+        try:
+            img = np.array(Image.open(uploaded_file))
+            st.image(img)
+            text = pytesseract.image_to_string(img)
+            print(text)
+            st.write(text)
 
         
-       
+        except Exception as e:
+            print(text)
+
 
 
 
