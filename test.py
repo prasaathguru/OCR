@@ -20,7 +20,7 @@ def main():
 
         
         except Exception as e:
-            print(text)
+            print(e)
 
 
 
